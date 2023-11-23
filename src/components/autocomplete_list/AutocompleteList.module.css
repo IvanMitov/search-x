@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    padding: 6px 12px;
+    cursor: default;
+    color: #000000ff;
+}
+
+.listItem:hover,
+.activeItem {
+    background-color: #20212419;
+}
+
+.textContainer {
+    display: flex;
+    flex-grow: 1;
+    padding: 0 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon {
+    padding: 0 8px;
+}

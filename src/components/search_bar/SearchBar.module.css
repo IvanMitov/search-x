@@ -1,0 +1,8 @@
+.container {
+    border-radius: 22px;
+    box-shadow: 0 1px 6px 0 #20212451;
+    overflow: hidden;
+    position: absolute;
+    width: calc(100% - 20vw);
+    background-color: #fff;
+}

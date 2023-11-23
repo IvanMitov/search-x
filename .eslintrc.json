@@ -1,0 +1,76 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "indent": ["warn", 2],
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "tabWidth": 4,
+        "ignoreComments": true,
+        "ignoreStrings": true
+      }
+    ],
+    "arrow-parens": ["warn", "as-needed"],
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "object-shorthand": "error",
+    "no-array-constructor": "error",
+    "prefer-template": "error",
+    "template-curly-spacing": ["error", "never"],
+    "no-eval": "error",
+    "prefer-arrow-callback": "error",
+    "arrow-spacing": "error",
+    "arrow-body-style": ["error", "as-needed"],
+    "no-iterator": "error",
+    "eqeqeq": "error",
+    "no-unneeded-ternary": "error",
+    "brace-style": "error",
+    "no-else-return": "error",
+    "space-before-blocks": "error",
+    "keyword-spacing": "error",
+    "space-infix-ops": "error",
+    "eol-last": "error",
+    "padded-blocks": ["error", "never"],
+    "no-multiple-empty-lines": "error",
+    "space-in-parens": "error",
+    "array-bracket-spacing": "error",
+    "object-curly-spacing": ["error", "always"],
+    "comma-spacing": "warn",
+    "key-spacing": "error",
+    "no-trailing-spaces": ["error", { "ignoreComments": true }],
+    "no-multi-spaces": "error",
+    "comma-style": "error",
+    "comma-dangle": ["error", "only-multiline"],
+    "id-length": "warn",
+    "camelcase": "error"
+  },
+  "ignorePatterns": ["node_modules"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
