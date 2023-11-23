@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import SearchBar from "./components/search_bar/SearchBar";
 import Results from "./components/results/Results";
-import { DataItem, data } from "./utils/data";
+import { DataItem, data } from "./constants/data";
 import { MAX_RESULTS } from "./constants/defaults";
 import { getResults } from "./utils/utils";
 import "./App.css";
@@ -15,7 +15,7 @@ function App() {
 
   const handleSearchExecute = async (keyword: string) => {
     setLoading(true);
-    // Simulate server delay
+    // Simulate server delay with random number
     const randomDelay = Math.random() * (1000 - 100) + 100;
     const foundedResults: DataItem[] = await new Promise(resolve =>
       setTimeout(() => resolve(getResults(data, "name", keyword)), randomDelay)
